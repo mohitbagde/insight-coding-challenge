@@ -21,6 +21,8 @@ for line in ipfile:
 		wordcount[word] += 1
 	#	unique -= 1
     uniquewordcounts.append(unique)
+    #uniquewordcounts = sorted(uniquewordcounts)
+    #print uniquewordcounts
     median = mymed(uniquewordcounts)
     print median
     opfile.write("{0}{1}".format(median,'\n'))
